@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>User Dashboard</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/script.js" defer></script>
+</head>
+
+<body>
+    <div class="logout">
+        <button onclick="logout()">Logout</button>
+    </div>
+    <div class="container">
+        <div class="panel">
+            <h2>Add Task</h2>
+            <form id="add-task-form">
+                <input type="text" id="task-title" placeholder="Task Title" required>
+                <textarea id="task-desc" placeholder="Task Description" required></textarea>
+                <input type="date" id="due-date" required>
+                <input type="time" id="due-time" required>
+                <select id="priority">
+                    <option value="red">High</option>
+                    <option value="yellow">Medium</option>
+                    <option value="green">Low</option>
+                </select>
+                <label>
+                    <input type="checkbox" id="personal"> Personal
+                </label>
+                <button type="button" onclick="addTask()">Add Task</button>
+            </form>
+            <div id="calendar"></div>
+        </div>
+        <div class="panel">
+            <h2>Tasks</h2>
+            <div class="tasks">
+                <div>
+                    <h3>Personal Tasks</h3>
+                    <ul id="personal-tasks"></ul>
+                </div>
+                <div>
+                    <h3>Assigned Tasks</h3>
+                    <ul id="assigned-tasks"></ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

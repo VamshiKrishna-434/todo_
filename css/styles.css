@@ -1,0 +1,60 @@
+body {
+    background: url('college_bg.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-box {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.logo-left,
+.logo-right {
+    width: 50px;
+    height: 50px;
+    margin: 0 10px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.panel {
+    flex: 1;
+    margin: 0 10px;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.tasks {
+    display: flex;
+    justify-content: space-between;
+}
+
+#calendar {
+    margin-top: 20px;
+}
+
+.logout {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+#online-users img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
