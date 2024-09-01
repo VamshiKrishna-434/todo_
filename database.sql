@@ -26,5 +26,4 @@ CREATE TABLE IF NOT EXISTS tasks (
 
 -- Insert a test user
 INSERT INTO users (email, password, role, mobile, online_status) 
-VALUES ('testuser@example.com', '$2y$10$somethinghashed', 'user', '1234567890', FALSE); -- Replace 'somethinghashed' with an actual bcrypt hash of your password
---vvkcld434!@#
+VALUES ('testuser@example.com', '$2y$10$somethinghashed', 'user', '1234567890', FALSE); 
